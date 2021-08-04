@@ -1,0 +1,48 @@
+<form [formGroup]="addressForm" novalidate (ngSubmit)="onSubmit()">
+  <mat-card class="shipping-card">
+    <mat-card-header>
+      <mat-card-title>EMI Calculator</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div class="row">
+        <div class="col">
+          <mat-form-field class="full-width">
+            <input matInput type="number" placeholder="Principal Amount" formControlName="principal_amount">
+            <mat-error *ngIf="addressForm.controls['principal_amount'].hasError('required')">
+              Principal Amount is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <mat-form-field class="full-width">
+          <input matInput type="number" placeholder="Interest Rate" formControlName="interest_rate">
+          <mat-error *ngIf="addressForm.controls['interest_rate'].hasError('required')">
+            Interest Rate is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="row">
+        <mat-form-field class="full-width">
+          <input matInput type="number" placeholder="Total Months" formControlName="total_months">
+          <mat-error *ngIf="addressForm.controls['total_months'].hasError('required')">
+            Total Months is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button color="primary" type="submit">Submit</button>
+      <div>
+        <p *ngIf="EMI!=0">
+          <br>
+          Principal Amount <b>  {{principal_amount}}</b><br>
+          Rate <b>{{interest_rate * 100| number}} / Per Month FOR 100 RS</b><br>
+          Interest <b>{{interest | number}}</b><br>
+          Total Amount<b>  {{EMI| number}}</b><br>
+        </p>
+      </div>
+    </mat-card-actions>
+
+  </mat-card>
+</form>
