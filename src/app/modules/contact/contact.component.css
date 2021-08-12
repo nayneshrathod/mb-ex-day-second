@@ -1,0 +1,28 @@
+mat-card {
+    /* height: 75vh; */
+    color: #fff;
+    padding-right: 200px;
+    background-color: rgba(15, 15, 173, 0.801);
+  }
+  .mt80 {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  } 
+  .mb80 {
+    margin-bottom: 80px;
+  }
+  mat-form-field {
+    color: #fff;
+    /* border-color: #fff; */
+    /* outline-color: #fff; */
+  }
+  
+  mat-label {
+    color: #fff;
+    border-color:#fff ;
+  } 
+  mat-icon {
+    font-size: 22px;
+    margin-right: 10px;
+  }
+  

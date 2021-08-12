@@ -1,0 +1,28 @@
+<mat-nav-list >
+    <div class="profile-card">
+        <div class="header">
+            <h2>Naynesh Rathod</h2>
+            <h4>nayneshrathod@gmail.com</h4>
+        </div>
+        <img src="https://ca.slack-edge.com/T04PWUYFD-U029VTEN4HZ-ebc4361e32d6-512" alt="Naynesh Rathod">
+    </div>
+    <mat-divider></mat-divider>
+    <h3 mat-subheader>Accounts</h3>
+    <a mat-list-item routerLink="/auth/login" routerLinkActive="list-item-active">Login</a>
+    <a mat-list-item routerLink="/auth/register" routerLinkActive="list-item-active">Register</a>
+    <h3 mat-subheader>Pages</h3>
+    <a mat-list-item routerLink="/" routerLinkActive="list-item-active">Dashboard</a>
+    <a mat-list-item routerLink="/all/posts" routerLinkActive="list-item-active">Posts</a>
+    <a mat-list-item routerLink="/all/articale" routerLinkActive="list-item-active">Articles</a>
+    <a mat-list-item routerLink="/all/forloop" routerLinkActive="list-item-active">For Loop Directive</a>
+
+    <mat-divider></mat-divider>
+    <h3 mat-subheader>Profile</h3>
+    <a mat-list-item routerLink="/contact" routerLinkActive="list-item-active">
+        <mat-icon>import_contacts</mat-icon>Contact
+    </a>
+    <a mat-list-item routerLink="/about" routerLinkActive="list-item-active">
+        <mat-icon>help_outline</mat-icon>About
+    </a>
+
+</mat-nav-list>

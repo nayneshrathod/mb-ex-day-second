@@ -1,0 +1,24 @@
+/* html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+} */
+mat-nav-list {
+  overflow-x: hidden !important;
+}
+.mat-icon {
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.profile-card {
+  text-align: center;
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  /* background-image: url('https://ca.slack-edge.com/T04PWUYFD-U029VTEN4HZ-ebc4361e32d6-512'); */
+  padding: 0 20px 10px 20px;
+}
+.profile-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}

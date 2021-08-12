@@ -1,0 +1,61 @@
+<div fxFlex="100" fxFlexOffset="0" fxFlex.xl="90" fxFlexOffset.xl="5" fxFlex.gt-md="100" fxFlexOffset.gt-md="0"
+    fxFlex.gt-sm="90" fxFlexOffset.gt-sm="5">
+    <mat-card fxFlex="100" color="primary" fxLayoutAlign="space-between start">
+        <div fxLayout="row" fxFlex="50" [fxHide.xs]="true" fxLayoutAlign="space-around start">
+            <div fxLayout="column" fxLayoutGap="20px">
+                <h1 style="font-size:3.3em" class="mt80">Let's Talk</h1>
+                <p>Ask us Anything or just say Hi...</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p fxLayout="row" fxLayoutAlign="start center">
+                    <mat-icon>phone</mat-icon> +91 855 094 9497
+                </p>
+                <p fxLayout="row" fxLayoutAlign="start center">
+                    <mat-icon class="mat-18">email</mat-icon> nayneshrathod@gmail.com
+                </p>
+            </div>
+        </div>
+<!--         
+        <div fxLayout="row" fxFlex="20" fxLayoutGap="50px">
+        </div> -->
+
+        <div fxLayout="row" fxLayout.sx="column" fxFlex="30" fxFlex.xs="100" fxLayoutAlign.sx="center center" fxLayoutGap="1px">
+            <form class="mt80" fxFlex fxLayout="column" [formGroup]="conatctform" (ngSubmit)="onSubmit()">
+                <div>
+
+                    <div fxLayout="row" fxLayout.lt-sm="column"  fxLayoutGap="26px">
+                        <mat-form-field fxFlex>
+                            <mat-label>Full Name</mat-label>
+                            <input matInput type="text" placeholder="Your Full name" formControlName="name">
+                        </mat-form-field>
+                        <mat-form-field fxFlex>
+                            <mat-label>Email Address</mat-label>
+                            <input matInput type="email" placeholder="Your Email-ID" formControlName="email">
+                        </mat-form-field>
+                    </div>
+
+                    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="26px">
+
+                        <mat-form-field fxFlex>
+                            <mat-label>Your Message</mat-label>
+                            <textarea matInput placeholder="Your Message  Here" rows="11" formControlName="message">
+                        </textarea>
+                        </mat-form-field>
+                    </div>
+
+                    <div fxLayout="row" fxLayout.lt-sm="column">
+                        <button mat-raised-button>Send <mat-icon>send</mat-icon></button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+    </mat-card>
+</div>
+<br>

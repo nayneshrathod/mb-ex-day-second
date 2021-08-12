@@ -1,0 +1,20 @@
+/*
+ul li{
+    list-style: none;
+    overflow: hidden;
+float: left;
+} 
+
+*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+/* mat-toolbar-row{height: 300px;} */
